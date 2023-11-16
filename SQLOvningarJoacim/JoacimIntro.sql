@@ -12,7 +12,6 @@
 
 --INSERT INTO DjurTbl (Id, Namn)
 --VALUES ('1', 'Hamster');
-
 --INSERT INTO DjurTbl (Id, Namn)
 --VALUES ('2', 'Hund');
 --INSERT INTO DjurTbl (Id, Namn)
