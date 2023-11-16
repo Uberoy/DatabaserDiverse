@@ -20,8 +20,8 @@
 --INSERT INTO DjurTbl (Id, Namn)
 --VALUES ('4', 'Kanin');
 
-SELECT * 
-FROM DjurTbl;
+--SELECT * 
+--FROM DjurTbl;
 
 --CREATE DATABASE KlassenDb;
 --USE KlassenDb;

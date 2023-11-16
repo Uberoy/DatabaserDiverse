@@ -73,3 +73,39 @@
 --SELECT Building, SUM(Years_employed)
 --FROM Employees
 --GROUP BY Building
+
+--**Lesson 11*--
+--¤Task 1¤--
+SELECT COUNT(*) 
+FROM employees
+WHERE role = "Artist";
+
+--¤Task 2¤--
+SELECT Role, COUNT(*)
+FROM Employees
+GROUP BY Role;
+
+--Task3--
+SELECT SUM(Years_employed)
+FROM Employees
+WHERE Role = 'Engineer';
+
+--**Lesson 12**--
+--Task1--
+SELECT Director, COUNT(*) 
+FROM movies
+GROUP BY Director;
+
+--Task2--
+SELECT Director, SUM(Domestic_sales + International_sales) AS Total_Sales
+FROM movies
+INNER JOIN Boxoffice
+    ON Id = Movie_id
+GROUP BY Director;
+
+--**Lesson 14**--
+--Task 3--
+UPDATE Movies
+SET Director = 'Lee Unkrich', 
+    Title = 'Toy Story 3'
+WHERE Id = 11;
